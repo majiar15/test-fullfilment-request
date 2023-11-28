@@ -1,0 +1,26 @@
+{
+  "name": "rocketfy-latam",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev --tunnel-url=https://6fb9-201-233-140-72.ngrok-free.app:3000 --reset",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "3.48.2",
+    "@shopify/cli": "3.48.2",
+    "@shopify/shopify-api": "7.5.1"
+  },
+  "author": "admin",
+  "private": true,
+  "workspaces": [
+    "web",
+    "web/frontend",
+    "extensions/*"
+  ]
+}
